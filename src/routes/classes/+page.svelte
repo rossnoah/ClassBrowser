@@ -115,11 +115,17 @@
     
 
   </script>
-<div class="m-4 font-medium">
-<p >Welcome to LafUtils</p>
-<p >Please be aware that the information on this page may be inacurate and incomplete.</p>
+<div class="m-4 font-medium text-center justify-items-center">
+<p class="font-black text-6xl">Welcome to ClassBrowser</p>
 <p>Currently showing Fall 2023 Classes</p>
+
 </div>
+
+<div class="flex justify-center mt-8">
+  <p class="bg-red-200 inline-block p-4 max-w-screen rounded-lg text-center">⚠ Please be aware that the information on this page may be inacurate and incomplete.
+    <br>Only Values, Writing, Social Science, Humanities and Global and Multicultural 1/2 are shown. ⚠</p>
+</div>
+
 
 
 <div class="m-2">
@@ -162,7 +168,7 @@
 
 
 
-<input class="p-2 rounded-lg m-2" bind:value={search}  on:input={() => filterSearch(search)} placeholder="Search for classes">
+<input class="p-2 rounded-lg m-2 pr-40" bind:value={search}  on:input={() => filterSearch(search)} placeholder="Search for classes">
 
 </div>
 
@@ -174,8 +180,17 @@
 
 
 {#if numClasses==0}
-<p class="font-bold">No Classes Found</p>
+<p class="font-bold m-4">No Classes Found. Try reducing the filters or clearing the search bar</p>
 {/if}
+
+{#if numClasses>1}
+<p class="font-bold m-4">{numClasses} Classes Found</p>
+{/if}
+
+{#if numClasses==1}
+<p class="font-bold m-4">{numClasses} Class Found</p>
+{/if}
+
 
 
 
