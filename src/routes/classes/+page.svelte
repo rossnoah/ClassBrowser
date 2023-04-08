@@ -3,7 +3,6 @@
 
     export let data;
     let rawClasses = data.classes;
-     console.log(rawClasses);
 
     // console.log(numClasses);
 
@@ -38,6 +37,9 @@
     let numRaw= rawClasses.length;
 
     function filter(){
+
+
+
       classes=rawClasses;
 
     if(v){
@@ -149,13 +151,14 @@
 
 <label class="font-bold bg-slate-400 p-2 rounded-lg m-2">
   Global 2 
-<input type="checkbox" on:click={() => gm2=!gm} on:click={() => filter()}>
+<input type="checkbox" on:click={() => gm2=!gm2} on:click={() => filter()}>
 </label>
 
 <label class="font-bold bg-slate-400 p-2 rounded-lg m-2">
   Global 1 or 2 
 <input type="checkbox" on:click={() => gm=!gm} on:click={() => filter()}>
 </label>
+
 
 
 
