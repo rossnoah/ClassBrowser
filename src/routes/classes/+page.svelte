@@ -185,35 +185,39 @@
     <p class="font-medium">- {classes[i][2]}&nbsp</p>
     <p class="font-medium">- {classes[i][3]}</p>
     <div class="flex content-end">
-    <p>CCS:</p>
+      {#if (classes[i][5]==1||classes[i][6]==1||classes[i][7]==1||classes[i][8]==1||classes[i][9]==1||classes[i][10]==1)}
+        <p class="font-medium">&nbsp-</p>
+      {/if}
+
+
     {#if (classes[i][5])==1}
     <div class="font-bold">
-        <p>V</p>
+        <p>&nbspV</p>
       </div>
     {/if}
     {#if (classes[i][6])==1}
     <div class="font-bold">
-        <p>W</p>
+        <p>&nbspW</p>
       </div>
     {/if}
     {#if (classes[i][7])==1}
     <div class="font-bold">
-      <p>SS</p>
+      <p>&nbspSS</p>
     </div>
     {/if}
     {#if (classes[i][8])==1}
     <div class="font-bold">
-      <p>H</p>
+      <p>&nbspH</p>
     </div>
     {/if}
     {#if (classes[i][9])==1}
     <div class="font-bold">
-      <p>GM1</p>
+      <p>&nbspGM1</p>
     </div>
     {/if}
     {#if (classes[i][10])==1}
     <div class="font-bold">
-      <p>GM2</p>
+      <p>&nbspGM2</p>
     </div>
     {/if}
   </div>
