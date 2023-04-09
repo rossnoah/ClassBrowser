@@ -450,9 +450,10 @@
 
 
 
-<button class="fixed bottom-0 right-0 p-4 m-6 dark:bg-slate-800 bg-slate-400 text-white rounded-full shadow-lg"
-on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-<svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-</svg>
+<button class="fixed bottom-0 right-0 p-3 m-4 bg-slate-400 text-white dark:bg-slate-500 rounded-full shadow-lg"
+  on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+  <i class="fa fa-arrow-up"></i> <!-- Font Awesome icon -->
+  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"> <!-- Heroicons icon -->
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
 </button>
