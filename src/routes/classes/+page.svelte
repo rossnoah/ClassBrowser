@@ -450,7 +450,7 @@
 
 
 
-<button class="fixed bottom-0 right-0 p-3 m-2 bg-slate-400 text-white dark:bg-slate-500 rounded-full shadow-lg"
+<button class="fixed bottom-0 right-0 p-3 m-4 bg-slate-400 text-white dark:bg-slate-500 rounded-full shadow-lg"
   on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
   <i class="fa fa-arrow-up"></i> <!-- Font Awesome icon -->
   <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"> <!-- Heroicons icon -->
