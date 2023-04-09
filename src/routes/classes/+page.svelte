@@ -351,7 +351,7 @@
 
 
 <div class="flex justify-center">
-  <div class="bg-slate-100 rounded-lg flex md:w-1/3 sm:w-full shadow-lg dark:bg-slate-300">
+  <div class="bg-slate-100 rounded-lg flex w-5/6 md:w-1/3  shadow-lg dark:bg-slate-300">
     <input class="border-none bg-transparent outline-none p-2 w-full placeholder-slate-500 dark:placeholder-slate-700 dark:text-slate-900" bind:value={search}  on:input={() => filter()} placeholder="Search for classes">
   </div>
 </div>
