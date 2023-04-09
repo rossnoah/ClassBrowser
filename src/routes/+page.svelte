@@ -9,6 +9,10 @@
 
   onMount(() => {
     isMobile = window.innerWidth < 640;
+
+    isMobile = true;//force sorting duplicates and displaying less info
+
+
     if(isMobile){
   rawClasses = rawClasses.filter(function (el, index, self) {
     return index === self.findIndex((t) => (
