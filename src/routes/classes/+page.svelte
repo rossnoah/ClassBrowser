@@ -210,7 +210,6 @@
     
 
   </script>
-<div class="  dark:text-slate-100">
 
 <!-- DARKMODE CODE -->
 
@@ -254,61 +253,61 @@
 
 </div>
 
-<div class="flex justify-center mt-8 ">
+<div class="flex flex-col items-center justify-center">
   <p class="bg-red-200 dark:bg-red-400 border-2 border-red-300 dark:border-red-500 dark:text-slate-900 inline-block p-2 max-w-screen rounded-lg text-center m-2 ">Please be aware that the information on this page may be inacurate and incomplete.
     <br>Data last updated 4/7/2023</p>
 </div>
 
 
 
-<div class="m-2 flex flex-wrap justify-center items-center text-sm">
+<div class="m-2 flex flex-wrap justify-center items-center text-sm dark:text-slate-400">
   <!-- Add a row of checkboxes coresponding to the booleans above. -->
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Values</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => v=!v} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Writing</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => w=!w} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Social Science</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => s=!s} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Humanities</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => h=!h} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Global 1</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => gm1=!gm1} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Global 2</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => gm2=!gm2} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Global 1 or 2</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => gm=!gm} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Language</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => l=!l} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Natural Science</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => ns=!ns} on:click={() => filter()}>
 </label>
 
-<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800 dark:text-slate-500 font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
+<label class="inline-flex items-center bg-slate-400 dark:bg-slate-800  font-bold px-4 py-2 rounded-full m-1 cursor-pointer shadow-lg">
   <span class="mr-2 select-none">Quantitative</span>
   <input type="checkbox" class="form-checkbox h-4 w-4" on:click={() => q=!q} on:click={() => filter()}>
 </label>
@@ -322,7 +321,7 @@
 
 
 <div class="flex justify-center">
-  <div class="bg-slate-100 rounded-lg flex w-1/3 shadow-lg dark:bg-slate-300 ">
+  <div class="bg-slate-100 rounded-lg flex md:w-1/3 sm:w-full shadow-lg dark:bg-slate-300">
     <input class="border-none bg-transparent outline-none p-2 w-full placeholder-slate-500 dark:placeholder-slate-700 dark:text-slate-900" bind:value={search}  on:input={() => filter()} placeholder="Search for classes">
   </div>
 </div>
@@ -348,14 +347,12 @@
 
 
 {#each Array(numClasses).fill(0) as _, i}
-<div class="bg-slate-200 p-2 m-6 flex rounded-lg shadow-md dark:bg-slate-600 dark:text-slate-200">
-    <p class="font-bold">{classes[i][0]} {classes[i][1]}&nbsp;</p>
-    <p class="font-medium">- {classes[i][2]}&nbsp</p>
-    <p class="font-medium">- {classes[i][3]}&nbsp</p>
-    <p class="font-medium">- {classes[i][4]}</p>
-    <div class="flex content-end">
+<div class="bg-slate-200 p-2 m-2 md:m-6 flex flex-wrap items-center rounded-lg shadow-md dark:bg-slate-700 dark:text-slate-100">
+  <p class="font-bold mr-2">{classes[i][0]} {classes[i][1]}&nbsp;</p>
+  <p class="font-medium mr-1">{classes[i][2]} - {classes[i][3]} - {classes[i][4]}</p>
+  <div class="flex content-end">
       {#if (classes[i][6]==1||classes[i][7]==1||classes[i][8]==1||classes[i][9]==1||classes[i][10]==1||classes[i][11]==1||classes[i][12]==1||classes[i][13]==1||classes[i][14]==1)}
-        <p class="font-medium">&nbsp-</p>
+        <p class="font-medium">-</p>
       {/if}
 
 
@@ -410,4 +407,3 @@
 {/each}
 
 
-</div>
