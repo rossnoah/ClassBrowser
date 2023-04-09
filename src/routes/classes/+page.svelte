@@ -107,7 +107,7 @@
 
     //filter out classes that don't have [0] == search
     classes = classes.filter(function (el) {
-      return (el[0].toLowerCase().includes(term.toLowerCase())||el[2].toLowerCase().includes(term.toLowerCase()));
+      return (el[0].toLowerCase().includes(term.toLowerCase())||el[2].toLowerCase().includes(term.toLowerCase())||el[1].toLowerCase().includes(term.toLowerCase()));
     })
     numClasses = classes.length;
   }
@@ -115,15 +115,20 @@
     
 
   </script>
+
+  <title>ClassBrowser</title>
 <div class="m-4 font-medium text-center justify-items-center">
 <p class="font-black text-6xl">Welcome to ClassBrowser</p>
 <p>Currently showing Fall 2023 Classes</p>
+<p></p>
+
 
 </div>
 
 <div class="flex justify-center mt-8">
-  <p class="bg-red-200 inline-block p-4 max-w-screen rounded-lg text-center">⚠ Please be aware that the information on this page may be inacurate and incomplete.
-    <br>Only Values, Writing, Social Science, Humanities and Global and Multicultural 1/2 are shown. ⚠</p>
+  <p class="bg-red-200 inline-block p-4 max-w-screen rounded-lg text-center">Please be aware that the information on this page may be inacurate and incomplete.
+    <br>Only Values, Writing, Social Science, Humanities and Global and Multicultural 1/2 are shown. 
+    <br>Data last updated 4/7/2023</p>
 </div>
 
 
