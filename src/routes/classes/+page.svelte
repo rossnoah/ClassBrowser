@@ -245,8 +245,9 @@
 
 
 
-<div class="m-4 font-medium text-center justify-items-center ">
-<p class="font-black text-6xl">ClassBrowser</p>
+
+<div class="my-4 mx-2 font-medium text-center justify-items-center ">
+<p class="font-black text-4xl md:text-6xl">ClassBrowser</p>
 <p>Currently Showing Fall 2023 Classes</p>
 <p></p>
 
@@ -348,8 +349,8 @@
 
 {#each Array(numClasses).fill(0) as _, i}
 <div class="bg-slate-200 p-2 m-2 md:m-6 flex flex-wrap items-center rounded-lg shadow-md dark:bg-slate-700 dark:text-slate-100">
-  <p class="font-bold mr-2">{classes[i][0]} {classes[i][1]}&nbsp;</p>
-  <p class="font-medium mr-1">{classes[i][2]} - {classes[i][3]} - {classes[i][4]}</p>
+  <p class="font-bold">{classes[i][0]} {classes[i][1]}&nbsp;</p>
+  <p class="font-medium">{classes[i][2]} - {classes[i][3]} - {classes[i][4]}</p>
   <div class="flex content-end">
       {#if (classes[i][6]==1||classes[i][7]==1||classes[i][8]==1||classes[i][9]==1||classes[i][10]==1||classes[i][11]==1||classes[i][12]==1||classes[i][13]==1||classes[i][14]==1)}
         <p class="font-medium">-</p>
