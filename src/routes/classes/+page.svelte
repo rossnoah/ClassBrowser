@@ -1,13 +1,25 @@
 <title>ClassBrowser</title>
 <script>
   import { text } from 'svelte/internal';
+  import { onMount } from 'svelte';
+  export let data;
 
-    export let data;
-    let rawClasses = data.classes;
+  let isMobile = false;
+  let rawClasses = data.classes;
 
-    // console.log(numClasses);
+  onMount(() => {
+    isMobile = window.innerWidth < 640;
+    if(isMobile){
+  rawClasses = rawClasses.filter(function (el, index, self) {
+    return index === self.findIndex((t) => (
+      t[0] === el[0] && t[1] === el[1]
+    ))
+  })
+    filter();
+}
+  });
 
-    // console.log(classes[0][0]);
+
 
 //filter out class where [0] length is less than 2
     rawClasses = rawClasses.filter(function (el) {
@@ -19,6 +31,12 @@
     let search = "";
 
     let darkMode = false;
+
+
+
+
+
+
 
     function toggleDarkMode() {
       darkMode = !darkMode;
@@ -169,11 +187,28 @@
       //split term into words
       let words = term.split(" ");
       let found = false;
+
+      //if words.length is 2 and the first words is 2-4 letters and the second word is numbers
+      if(words.length==2 && words[0].length>=2 && words[0].length<=4 && !isNaN(words[1])){
+        //if the first word is in [0] and the second word is in [1]
+        if(el[0].toLowerCase().includes(words[0].toLowerCase()) && el[1].toLowerCase().includes(words[1].toLowerCase())){
+          found = true;
+        }
+        return found;
+      }
+      
+
+
+
+
       words.forEach(word => {
         if(el[0].toLowerCase().includes(word.toLowerCase())||el[3].toLowerCase().includes(word.toLowerCase())||el[1].toLowerCase().includes(word.toLowerCase())){
           found = true;
         }
       });
+
+
+      
 
 
 
@@ -198,8 +233,8 @@
       filterCount(minCCS);
     }
     filterSearch(search);
-    numClasses = classes.length;
 
+    numClasses = classes.length;
 
   }
 
@@ -242,16 +277,10 @@
 
 
 
-
-
-
-
 <div class="my-4 mx-2 font-medium text-center justify-items-center ">
 <p class="font-black text-4xl md:text-6xl">ClassBrowser</p>
 <p>Currently Showing Fall 2023 Classes</p>
 <p></p>
-
-
 </div>
 
 <div class="flex flex-col items-center justify-center">
@@ -348,9 +377,21 @@
 
 
 {#each Array(numClasses).fill(0) as _, i}
+
+
+
 <div class="bg-slate-200 p-2 m-2 md:m-6 flex flex-wrap items-center rounded-lg shadow-md dark:bg-slate-700 dark:text-slate-100">
   <p class="font-bold">{classes[i][0]} {classes[i][1]}&nbsp;</p>
-  <p class="font-medium">{classes[i][2]} - {classes[i][3]} - {classes[i][4]}</p>
+  {#if !isMobile}
+  <p class="font-medium">{classes[i][2]} - {classes[i][3]} - {classes[i][4]}&nbsp</p>
+
+  {/if}
+  {#if isMobile}
+  <p class="font-medium">{classes[i][3]}&nbsp</p>
+
+  {/if}
+
+
   <div class="flex content-end">
       {#if (classes[i][6]==1||classes[i][7]==1||classes[i][8]==1||classes[i][9]==1||classes[i][10]==1||classes[i][11]==1||classes[i][12]==1||classes[i][13]==1||classes[i][14]==1)}
         <p class="font-medium">-</p>
