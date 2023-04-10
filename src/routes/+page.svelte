@@ -10,7 +10,7 @@
   onMount(() => {
     isMobile = window.innerWidth < 640;
 
-    isMobile = true;//force sorting duplicates and displaying less info
+    // isMobile = true;//force sorting duplicates and displaying less info
 
 
     if(isMobile){
@@ -282,7 +282,7 @@
 
 
 <div class="my-4 mx-2 font-medium text-center justify-items-center ">
-<p class="font-black text-4xl md:text-6xl">ClassBrowser</p>
+<h1 class="font-black text-4xl md:text-6xl">ClassBrowser</h1>
 <p>Currently Showing Fall 2023 Classes</p>
 <p></p>
 </div>
