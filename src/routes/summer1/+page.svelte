@@ -289,7 +289,7 @@
 
 <div class="flex flex-col items-center justify-center">
   <p class="bg-red-200 dark:bg-red-400 border-2 border-red-300 dark:border-red-500 dark:text-slate-900 inline-block p-2 max-w-screen rounded-lg text-center m-2 ">Please be aware that the information on this page may be inacurate and incomplete.
-    <br>Data last updated 4/18/2023</p>
+    <br>Data last updated 4/30/2023</p>
 </div>
 
 
