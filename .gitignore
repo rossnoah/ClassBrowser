@@ -20,5 +20,5 @@ scraper/*.db
 scraper/*.json
 scraper/*.html
 scraper/*.csv
-client/data/*.json
+# client/data/*.json
 symlink-from
