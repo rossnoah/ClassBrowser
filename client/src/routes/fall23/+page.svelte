@@ -283,13 +283,13 @@
 
 <div class="my-4 mx-2 font-medium text-center justify-items-center ">
 <h1 class="font-black text-4xl md:text-6xl">ClassBrowser</h1>
-<p>Currently Showing Spring 2024 Classes</p>
+<p>Showing Fall 2023 Classes</p>
 <p></p>
 </div>
 
 <div class="flex flex-col items-center justify-center">
   <p class="bg-red-200 dark:bg-red-400 border-2 border-red-300 dark:border-red-500 dark:text-slate-900 inline-block p-2 max-w-screen rounded-lg text-center m-2 ">Please be aware that the information on this page may be inacurate and incomplete.
-    <br>Data last updated 11/2/2023</p>
+    <br>Data last updated 5/5/2023</p>
 </div>
 
 
