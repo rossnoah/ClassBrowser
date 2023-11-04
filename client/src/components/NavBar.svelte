@@ -39,7 +39,7 @@
   @media (prefers-color-scheme: dark) {
     .class-active {
       color: #94a3b8; /* Dark mode active color */
-      background-color: #1e293b; /* Dark mode active background color */
+      background-color: #0f172a; /* Dark mode active background color */
     }
   }
 </style>
