@@ -5,6 +5,7 @@
   import { goto } from "$app/navigation";
 </script>
 
+<br /><br />
 <nav
   class="fixed inset-x-0 bottom-0 bg-slate-100 dark:bg-slate-800 border-t border-slate-300 dark:border-slate-700"
 >
