@@ -35,6 +35,7 @@ for index, d in enumerate(merged_data):
     course = d['courseNumber']
     section = d['sequenceNumber']
     name = d['courseTitle']
+    name = name.replace("&amp;", "&")
     id = d['courseReferenceNumber']
 
 # [{'category': '01', 'class': 'net.hedtech.banner.student.schedule.SectionSessionDecorator', 'courseReferenceNumber': '30386', 'faculty': [], 'meetingTime': {'beginTime': '1315', 'building': 'VAN', 'buildingDescription': 'Van Wickle Hall', 'campus': '1', 'campusDescription': 'Main Campus', 'category': '01', 'class': 'net.hedtech.banner.general.overall.MeetingTimeDecorator', 'courseReferenceNumber': '30386', 'creditHourSession': 0.0, 'endDate': '05/13/2024', 'endTime': '1600', 'friday': False, 'hoursWeek': 2.75, 'meetingScheduleType': '2', 'meetingType': 'CLAS', 'meetingTypeDescription': 'Class', 'monday': False, 'room': '106', 'saturday': False, 'startDate': '01/22/2024', 'sunday': False, 'term': '202330', 'thursday': False, 'tuesday': True, 'wednesday': False}, 'term': '202330'}]
