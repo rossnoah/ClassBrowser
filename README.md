@@ -5,3 +5,6 @@ A web app to browse Lafayette College's course catalog. Its built using a Python
 ### Why
 
 This was built primarily to enable filtering of classes by common core requirements. It also provides a powerful search bar to help find classes that you might be interested in.
+
+
+### The current version shows Spring 2024, fall of 23 can be accessed [here] (https://classbrowser.net/fall23)
