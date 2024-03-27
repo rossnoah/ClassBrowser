@@ -253,7 +253,7 @@
 
 <div class="my-4 mx-2 font-medium text-center justify-items-center">
   <h1 class="font-black text-4xl md:text-6xl">ClassBrowser</h1>
-  <p>Showing Summer I 2023 Classes</p>
+  <p>Showing Summer I 2024 Classes</p>
   <p></p>
 </div>
 
@@ -263,7 +263,7 @@
   >
     Please be aware that the information on this page may be inacurate and
     incomplete.
-    <br />Data last updated 4/30/2023
+    <br />Data last updated 3/27/2024
   </p>
 </div>
 

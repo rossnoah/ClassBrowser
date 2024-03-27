@@ -1,6 +1,6 @@
 // this is a svelete kit project, this file is a server side route
 
-import classes from "../../../data/summer1-23.json";
+import classes from "../../../data/summer2-24.json";
 //get the class data from the database
 
 //console.log(db);
