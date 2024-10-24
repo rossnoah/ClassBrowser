@@ -4,10 +4,9 @@
   import { page } from "$app/stores";
 
   let items = [
+    { label: "Spring - 25", icon: "🌳", href: "/" },
+    { label: "Winter 24-25", icon: "❄️", href: "/interim24-25" },
     { label: "Fall - 24", icon: "🍂", href: "/fall24" },
-    { label: "Summer 2 - 24", icon: "☀️", href: "/summer2-24" },
-    { label: "Summer 1 - 24", icon: "☀️", href: "/summer1-24" },
-    { label: "Spring - 24", icon: "🌳", href: "/" },
     { label: "About", icon: "👋", href: "/about" },
   ];
   let activeItem = items[0]; // Default to the first item as active

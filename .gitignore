@@ -22,6 +22,7 @@ scraper/*.html
 scraper/*.csv
 scraper/newClassSystem/part*.json
 scraper/newClassSystem/combined*.json
+scraper/newClassSystem/classes.json
 
 # client/data/*.json
 symlink-from
