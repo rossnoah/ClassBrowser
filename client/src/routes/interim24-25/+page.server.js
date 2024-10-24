@@ -4,6 +4,7 @@ import classes from "../../../data/interim24-25.json";
 //get the class data from the database
 
 //console.log(db);
+export const prerender = true; // Pre-generate the page at build time
 
 export async function load() {
   return { classes };

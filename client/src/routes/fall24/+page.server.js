@@ -5,6 +5,8 @@ import classes from "../../../data/fall24.json";
 
 //console.log(db);
 
+export const prerender = true; // Pre-generate the page at build time
+
 export async function load() {
   return { classes };
 }
